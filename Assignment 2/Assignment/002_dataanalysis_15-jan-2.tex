@@ -1,0 +1,129 @@
+\documentclass[aps,secnumarabic,balancelastpage,amsmath,amssymb,nofootinbib]{revtex4-1}
+\usepackage{graphicx}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\textwidth = 6.25 in
+\textheight = 8.5 in
+\oddsidemargin = 0.5 in
+\evensidemargin = 0.5 in
+\topmargin = 0.0 in
+\headheight = 0.0 in
+\headsep = 0.2 in
+\parskip = 0.2in
+\parindent = 0.0in
+
+\begin{document}\thispagestyle{empty}
+\begin{center}
+{\large \bf Data Plotting and Fitting Exercise}
+\rule{\columnwidth}{0.5pt}\\[-15mm]
+\end{center}
+\vspace*{-2mm}
+For most research projects, you will have to plot data and 
+find and plot theoretical models to compare with that data. 
+Powerful computer packages such as Mathematica, Matlab,
+Origin, Igor Pro, and Python/NumPy/Matplotlib are now available and 
+commonly used in research labs for these purposes. 
+The purpose of this exercise is to get you to learn the rudiments 
+of one of these packages, if you don't already know them.
+
+The assignment is divided into stages of increasing difficulty and sophistication. 
+I want you to use a full---featured scientific data-handling package; either\\[-8mm]
+\begin{enumerate}
+\item Python/NumPy/Matplotlib (open source)\\ Requires full python distribution---I recommend the Anaconda Python Distribution)
+\item Igor Pro (commercial; Wavemetrics, Inc.)\\ Serial Number: 37955\\Activation Key: ZMAT-TFLA-FWYY-NZYX-AX
+\end{enumerate} 
+\vspace*{-5mm}
+All of these questions use the "dummy data" that is listed at the end of this document (and is 
+available as a text file at \href{http://people.usm.maine.edu/pauln/ilab-phy240/}{http://people.usm.maine.edu/pauln/ilab-phy240/} .)
+
+I do not need a lot of writing for this assignment, but I would like you to write your solutions in an iPython Notebook using a combination of markdown cells (using  \LaTeX\ code where needed) and python commands that produce the required plots.  
+Make sure to include your name, date, and the actual plots with labelled axes, units, and anything else you
+need. Please turn in a printed copy of your solutions, and post an iPython notebook to your github site (make sure your notebook printout
+includes the github address). 
+
+You may find an example of fitting data using python at \href{http://scipyscriptrepo.com/wp/?p=76}{http://scipyscriptrepo.com/wp/?p=76}.
+
+\textbf{5 Questions; Due:} BEFORE class Monday, 1 February 2016\\
+\rule{\columnwidth}{0.5pt}
+\vspace*{-9mm}
+\begin{enumerate}
+\item \textsf{Simple plot and straight-line fit.} \\
+Plot the $z$ data set versus the $x$ data set on linear axes, using symbols.\\
+(not a curve through the data points, not a set of straight line segments, and not tiny invisibly small points). 
+Be sure the axes are labeled and you include units.
+Then, determine the best straight-line fit to the data and produce a plot showing both the data and the fit.
+
+\item \textsf{Semi-log and log-log plots and what they tell us.}\\ Plot the $u$ data set versus the $x$ data set. 
+Make one, the other, or both axes logarithmic- do any of these turn the plot into a straight line? 
+If so, what does that tell us about the data (what kind of function? what power?). 
+Repeat with the $v$ data set plotted versus $x$.
+
+\item \textsf{Plot data with error bars.}\\
+Plot the y data set versus the $x$ data set, using the $e$ data set as uncertainties on $y$. 
+That is, each data point should show a symbol at $(x_i, y_i)$ along with an error bar extending by $\pm e_i$ in the y direction.
+
+\item \textsf{Linear least-squares fit.}\\ Find the best fit of a quadratic function to the $y$ versus $x$ data. That is, find the values of $a$, $b$, $c$ 
+such that $y = a x^2 + b x + c$ best describes the data. This will normally involve minimizing the sum of the squares of the differences 
+between the fit and the data, hence the name "least squares". Plot the fit and the data (with error bars) on the same graph, 
+and print out the values of $a$, $b$, $c$. Usually it works best to plot the data using points or other symbols, and the fit as a smooth curve.
+(Do not connect the points by a jagged line that runs point-to-point.)
+\pagebreak
+\item \textsf{Nonlinear least-squares fits.}\\
+ Find and plot the best fit of the $y$ versus $x$ data to a gaussian function: 
+$$ y = a e^{-\frac{(x-c)^2}{2\sigma^2}}, $$
+with $a$, $c$, and $\sigma$ to be determined. Do the same thing for a cosine function: 
+$$ y = a \cos(\omega(x-c)).$$
+Note: This question is "harder" (requires a more sophisticated fitting program) than question four, because the gaussian and cosine 
+functions are not simply linear combinations of given functions.
+
+
+\end{enumerate}
+
+
+
+	\begin{table}[h]
+	\caption{\label{tab:stone} Fake Data set for this assignment.}
+	\begin{ruledtabular}
+	\begin{tabular}{rrrrrr}
+	 x 	&	z	&	u	&	v	&	y	&	e \\
+	\hline
+	(s) 	&	(m)	&	(m)	&	(m)	&	(m)	&	(m)\\
+	\hline
+0.015	&	0.921	&	0.212	&	1.381	&	0.015	&	0.070 \\
+0.172	&	1.472	&	0.457	&	1.328	&	0.210	&	0.109 \\
+0.329	&	1.527	&	0.598	&	1.731	&	0.440	&	0.187 \\
+0.486	&	1.921	&	0.703	&	1.987	&	0.547	&	0.140\\
+0.643	&	2.792	&	0.815	&	1.964	&	0.764	&	0.235\\
+0.800	&	3.181	&	0.909	&	2.644	&	0.753	&	0.105\\
+0.958	&	3.869	&	0.998	&	2.864	&	0.960	&	0.212\\
+1.115	&	3.955	&	1.060	&	3.262	&	0.959	&	0.131\\
+1.272	&	4.081	&	1.139	&	4.042	&	0.974	&	0.088\\
+1.429	&	5.127	&	1.210	&	4.448	&	1.019	&	0.099\\
+1.586	&	5.133	&	1.262	&	5.119	&	1.198	&	0.268\\
+1.743	&	5.906	&	1.323	&	6.138	&	1.009	&	0.094\\
+1.900	&	5.709	&	1.391	&	6.914	&	0.948	&	0.072\\
+2.057	&	6.447	&	1.442	&	8.315	&	0.990	&	0.176\\
+2.214	&	7.230	&	1.504	&	9.524	&	0.920	&	0.190\\
+2.317	&	7.951	&	1.542	&	10.809	&	0.730	&	0.103\\
+2.528	&	8.070	&	1.603	&	12.953	&	0.666	&	0.160\\
+2.685	&	8.800	&	1.642	&	14.915	&	0.452	&	0.081\\
+2.843	&	8.986	&	1.698	&	17.173	&	0.451	&	0.227\\
+3.000	&	9.743	&	1.743	&	20.364	&	0.245	&	0.174\\
+	
+	
+	
+	\end{tabular}
+	\end{ruledtabular}
+	\end{table}
+
+
+
+
+
+
+
+
+
+
+
+\end{document}
