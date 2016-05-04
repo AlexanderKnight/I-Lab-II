@@ -1,0 +1,34 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Allen(1906)]{Allen1906}
+A.O. Allen.
+\newblock On the adjustment of kater's pendulum.
+\newblock \emph{The Mathematical Gazette}, 3\penalty0 (57):\penalty0 307--313,
+  May 1906.
+
+\bibitem[D.~Candela and Langley(2001)]{Candela2001}
+R.V.~Krotkov D.~Candela, K.M.~Martini and K.H. Langley.
+\newblock Bessel's improved kater pendulum in the teaching lab.
+\newblock \emph{American Journal of Physics}, 69:\penalty0 714--720, 2001.
+
+\bibitem[Jesse and Born(1972)]{Jesse1972}
+K.E. Jesse and H.J. Born.
+\newblock Notes: Possible sources of error when using the kater pendulum.
+\newblock \emph{The Physics Teacher}, 10:\penalty0 466, 1972.
+
+\bibitem[Jesse(1980)]{Jesse1980}
+Kenneth~E. Jesse.
+\newblock Kater pendulum modification.
+\newblock \emph{American Journal of Physics}, 48:\penalty0 785, 1980.
+
+\bibitem[Rossi and Zaninetti(2005)]{Rossi2005}
+Michele Rossi and Lorenzo Zaninetti.
+\newblock The cubic period-distance relation for the kater reversible pendulum.
+\newblock \emph{Central European Science Journals}, 3:\penalty0 636--659, 2005.
+
+\end{thebibliography}
