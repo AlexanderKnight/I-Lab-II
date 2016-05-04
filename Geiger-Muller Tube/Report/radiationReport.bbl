@@ -1,0 +1,39 @@
+\begin{thebibliography}{1}
+
+\bibitem{atten}
+Non-Destructive Testing~Resource Center.
+\newblock Transmitted intensity and linear attenuation coefficient.
+\newblock
+  \url{https://www.nde-ed.org/EducationResources/CommunityCollege/Radiography/Physics/attenuationCoef.htm}.
+
+\bibitem{Co60}
+University of~Alaska.
+\newblock Cobalt 60 reference sheet.
+\newblock \url{http://ehsrms.uaa.alaska.edu/RSDSCo60.pdf}.
+
+\bibitem{scriptedExperiment}
+Jeffrey~R. Schmidt.
+\newblock {\em Advanced Experiments in Physics. Physics 306}.
+\newblock University of Wisconsin-Parkside, 2005.
+
+\bibitem{townsend}
+Greg Severn.
+\newblock Introduction to gas discharges.
+\newblock \url{http://home.sandiego.edu/~severn/intro_gas_discharges.pdf}.
+
+\bibitem{introGeiger}
+P.~Siegel.
+\newblock Introduction to geiger counters.
+\newblock \url{https://www.cpp.edu/~pbsiegel/bio431/texnotes/chapter4.pdf}.
+
+\bibitem{geigerTube}
+Unattributed.
+\newblock Geiger-muller tube.
+\newblock {\em Wikipedia}, 2016.
+
+\bibitem{distributions}
+J.H. Watt and Sjef van~den Berg.
+\newblock {\em Research Methods For Communication Science}.
+\newblock Academic Press, 2002.
+
+\end{thebibliography}
